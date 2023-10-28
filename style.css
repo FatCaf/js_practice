@@ -1,0 +1,83 @@
+.container {
+  max-width: 68.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+* {
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.task__one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.black__square {
+  background-color: black;
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.yellow__square {
+  background-color: yellow;
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+.red__square {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: red;
+  margin: 1.25rem 0;
+  display: none;
+}
+
+.green__square {
+  width: 3.125rem;
+  height: 1.25rem;
+  background-color: green;
+  display: none;
+}
+
+.actions {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.action__button {
+  width: 12.5rem;
+  height: 1.5625rem;
+  background-color: yellow;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+#hover {
+  margin-bottom: 1.25rem;
+}
+
+#get__image {
+  margin-top: 1.25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide_via_input {
+  display: none;
+}

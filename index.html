@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM Practice</title>
+  </head>
+  <body>
+    <section class="task__one">
+      <div class="black__square" id="black__square"></div>
+      <div class="black__square" id="black__square"></div>
+      <div class="black__square" id="black__square"></div>
+      <div class="black__square" id="black__square"></div>
+      <div class="black__square" id="black__square"></div>
+      <div class="actions">
+        <button
+          class="action__button"
+          onclick="document.getElementById('black__square').style.display='none'"
+        >
+          Display None
+        </button>
+        <button class="action__button" id="delete">Delete</button>
+        <button class="action__button" id="hidden">Hide</button>
+        <button class="action__button" id="reveal">Reveal</button>
+        <div class="green__square" id="green__square"></div>
+        <input
+          type="text"
+          id="text"
+          onfocus="document.getElementById('green__square').style.display='block'"
+          oninput="document.getElementById('green__square').style.display='none'"
+        />
+        <button class="action__button" id="submit" type="submit">Submit</button>
+      </div>
+      <div class="yellow__square" id="yellow__square"></div>
+      <div class="red__square" id="red__square"></div>
+      <button
+        class="action__button"
+        id="hover"
+        onmouseenter="document.getElementById('red__square').style.display='block'"
+        onmouseleave="document.getElementById('red__square').style.display='none'"
+      >
+        Hover on me
+      </button>
+      <input type="text" id="image__input" />
+      <button class="action__button" id="get__image">Get Image</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
