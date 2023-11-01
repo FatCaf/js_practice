@@ -81,3 +81,204 @@
 .hide_via_input {
   display: none;
 }
+
+.mouse__coordinates {
+  border: 2px solid red;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.user__language {
+  border: 2px solid green;
+  position: fixed;
+  top: 12%;
+  right: 0;
+}
+
+.user__geo {
+  border: 2px solid violet;
+  position: fixed;
+  top: 16%;
+  right: 0;
+}
+
+.edit__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid brown;
+  margin-top: 1.25rem;
+}
+.you__can__edit__me {
+  font-size: 1.75rem;
+  min-width: 6.25rem;
+}
+
+.you__can__edit__me.one {
+  color: red;
+}
+
+.you__can__edit__me.two {
+  color: blue;
+  border-left: 2px solid brown;
+}
+
+.you__can__edit__me.three {
+  color: blueviolet;
+  border-left: 2px solid brown;
+}
+
+#to__top {
+  margin-top: 1.25rem;
+  display: none;
+}
+
+.outer__block {
+  margin-top: 1.25rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 2px solid pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  cursor: pointer;
+}
+.inner__block {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 2px solid aquamarine;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+#blur {
+  margin-top: 1.25rem;
+}
+
+.blur__square {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.my__form {
+  margin-top: 1.25rem;
+}
+
+/* File Loader (Need to Transfer to a separate project) */
+
+.file__loader {
+  border-radius: 6px;
+  background: gray;
+  padding: 1rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  color: #42b983;
+  position: relative;
+  border-radius: 99px;
+  border: 1px solid #42b983;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  outline: none;
+  background: #fff;
+  transition: all 0.22s;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.btn.primary {
+  background: #42b983;
+  color: #fff;
+}
+
+.btn:active {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.preview__remove {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.22s;
+}
+
+.preview__image:hover .preview__remove {
+  opacity: 1;
+}
+
+.preview__image:hover .preview__info {
+  bottom: 4px;
+}
+
+.preview__info {
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  left: 0;
+  height: 1.5625rem;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.3125rem;
+  transition: bottom 0.22s;
+}
+
+.preview__info__progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #42b983;
+  transition: width 0.22s;
+}
+
+.preview__image {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.preview__image.removing {
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.preview__image img {
+  width: 11.25rem;
+  height: auto;
+}

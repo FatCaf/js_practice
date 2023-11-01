@@ -42,9 +42,54 @@
       >
         Hover on me
       </button>
-      <input type="text" id="image__input" />
+      <textarea id="image__input"> </textarea>
       <button class="action__button" id="get__image">Get Image</button>
+      <div class="mouse__coordinates">
+        <p class="mouseX">Mouse X: <span id="mouseX">0</span></p>
+        <p class="mouseY">Mouse Y: <span id="mouseY">0</span></p>
+      </div>
+      <div class="user__language">
+        <div id="userLanguage">
+          User's Language: <span id="language"></span>
+        </div>
+      </div>
+      <div class="user__geo">
+        <p>Your Latitude: <span id="latitude"></span></p>
+        <p>Your Longitude: <span id="longitude"></span></p>
+      </div>
+      <div class="edit__block">
+        <div class="you__can__edit__me one">
+          <p
+            contenteditable="true"
+            id="p1"
+            onload="p1.innerHTML = localStorage.getItem('p1')"
+          >
+            You can edit me
+          </p>
+        </div>
+        <div class="you__can__edit__me two">
+          <p contenteditable="true" id="p2">You can edit me</p>
+        </div>
+        <div class="you__can__edit__me three">
+          <p contenteditable="true" id="p3">You can edit me</p>
+        </div>
+      </div>
+      <div class="outer__block" id="outer">
+        <div class="inner__block" id="inner"></div>
+      </div>
+      <button class="action__button" id="blur">Blur Display</button>
+      <form class="my__form">
+        <input type="submit" value="GO" />
+      </form>
+      <div class="file__loader">
+        <h1>File Loader</h1>
+        <input type="file" id="file" />
+        <!-- <button class="btn">Open</button> -->
+        <!-- <button class="btn primary">Download</button> -->
+      </div>
     </section>
+    <div class="blur__square" id="blur__square"></div>
+    <button class="action__button" id="to__top">Go Up</button>
     <script src="script.js"></script>
   </body>
 </html>
