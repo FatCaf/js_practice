@@ -294,37 +294,6 @@ function upload(selector, options = {}) {
         reader.readAsDataURL(file);
       });
     }
-    // if (!event.target.files.length) {
-    //   return;
-    // }
-
-    // uploadBtn.style.display = "inline";
-
-    // files = Array.from(event.target.files);
-
-    // preview.innerHTML = "";
-
-    // files.forEach((file) => {
-    //   if (file.type.match("img")) {
-    //     return;
-    //   }
-
-    //   const reader = new FileReader();
-
-    //   reader.onload = (ev) => {
-    //     preview.insertAdjacentHTML(
-    //       "afterbegin",
-    //       `<div class="preview__image">
-    //       <div class="preview__remove" data-name="${file.name}">&times;</div>
-    //     <img src = "${ev.target.result}" alt = "${file.name}" />
-    //     <div class="preview__info"><span>${file.name}</span>
-    //     ${bytesToSize(file.size)}</div>
-    //     </div>`
-    //     );
-    //   };
-
-    //   reader.readAsDataURL(file);
-    // });
   };
 
   dropArea.addEventListener("drop", (e) => {
